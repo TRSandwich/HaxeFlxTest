@@ -2,7 +2,7 @@ package;
 
 import flixel.FlxState;
 
-class TestState extends FlxState
+class SecretState extends FlxState
 {
     override public function create()
     {

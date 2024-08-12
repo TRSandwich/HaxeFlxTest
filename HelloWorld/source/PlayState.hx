@@ -6,7 +6,7 @@ import flixel.input.actions.FlxAction;
 
 class PlayState extends FlxState
 {
-	var testKey = new FlxActionDigital();
+	var secretKey = new FlxActionDigital();
 	
 	override public function create()
 	{
@@ -16,13 +16,13 @@ class PlayState extends FlxState
 		text.screenCenter();
 		add(text);
 
-		testKey.addKey(SPACE, JUST_PRESSED);
+		secretKey.addKey(SPACE, JUST_PRESSED);
 	}
 
 	override public function update(elapsed:Float)
 	{
 		super.update(elapsed);
 
-		if (testKey.check()) FlxG.switchState(new TestState());
+		if (secretKey.check()) FlxG.switchState(new SecretState());
 	}
 }
