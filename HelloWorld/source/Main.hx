@@ -13,5 +13,6 @@ class Main extends Sprite
 		addChild(new FlxGame(0, 0, MenuState));
 		
 		addChild(new FPS(10, 10, 0xffffff));
+		addChild(new MemoryCounter(10, 10, 0xffffff));
 	}
 }
