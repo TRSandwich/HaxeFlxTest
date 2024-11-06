@@ -14,7 +14,7 @@ class MenuState extends FlxState
 
         if (FlxG.sound.music == null)
         {
-            FlxG.sound.playMusic(AssetPaths.Bleeping_Demo__mp3, 1, true);
+            FlxG.sound.playMusic(AssetPaths.Bleeping_Demo__ogg, 1, true);
         }
         
         btnPlay = new FlxButton(0, 0, "Play", clickPlay);
